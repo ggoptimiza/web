@@ -1,13 +1,15 @@
-/* Rutas del ecosistema GG Optimiza (configurables).
-   activa:true  -> el enlace lleva a la ruta indicada.
-   activa:false -> la página aún no existe: el enlace abre WhatsApp con un mensaje prellenado.
-   Estas rutas son locales/relativas y provisionales; se ajustarán cuando se defina la publicación final. */
+/* Configuración del ecosistema GG Optimiza. Edita aquí las rutas cuando publiques las páginas.
+   activa:true  -> el acceso lleva a la ruta indicada.
+   activa:false -> la página aún no existe: el acceso abre WhatsApp con un mensaje prellenado.
+   Empresarial y Dedicado quedan en true porque sus páginas ya existen como carpetas hermanas
+   (../vabien-empresarial y ../vabien-dedicado). Si las publicas en otra URL, cámbiala aquí. */
 window.GG_CONFIG={
   rutas:{
-    corporativo:{url:'../gg-corporativo/index.html',activa:true},
+    corporativo:'index.html',
     esencial:{url:'../gg-cine/index.html',activa:true},
-    dedicado:{url:'../vabien-dedicado/index.html',activa:false}
+    empresarial:{url:'../vabien-empresarial/index.html',activa:true},
+    dedicado:{url:'../vabien-dedicado/index.html',activa:true}
   },
-  nombres:{corporativo:'GG Optimiza',esencial:'Esencial',dedicado:'VaBien Dedicado'},
+  nombres:{esencial:'Esencial',empresarial:'VaBien Empresarial',dedicado:'VaBien Dedicado'},
   contacto:{whatsapp:'593963545517',visible:'0963 545 517',correo:'global@ggoptimiza.com'}
 };
